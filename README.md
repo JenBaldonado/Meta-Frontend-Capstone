@@ -1,1 +1,1 @@
-# Meta-Frontedn-Capstone
+# Meta-Frontend-Capstone
