@@ -1,0 +1,21 @@
+.Hero {
+  background-color: #495e57;
+  width: 100%;
+}
+.hero__inner {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 5%;
+}
+
+.hero__inner .left {
+    margin: auto;
+    flex: 0 0 50%;
+}
+
+.hero__inner .right {
+    margin: auto;
+    flex: 0 0 50%;
+}
