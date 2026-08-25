@@ -1,6 +1,22 @@
 import "../styles/hero.css";
+import { useState } from 'react'
+import Form from "./Form"
 
 function Hero() {
+    const [reservation, setReservation] = useState(null);
+    
+        function handleReservation(formData) {
+            console.log("Reservation:", formData);
+            // You could send formData to an API here.
+            setReservation(formData);
+        }
+
+    const [modal, setModal] = useState(false);
+
+    function openModal() {
+        setModal(true)
+    }
+
   return (
     <section className="hero">
             <div className="hero-container">
@@ -18,9 +34,16 @@ function Hero() {
                         in the heart of Chicago.
                     </p>
 
-                    <a href="#" className="button">
+                    {modal ? (<div id="modal" className="modal">
+                        <div className="innerModal">
+                            <div className="overlay"></div>
+                        <Form onSubmit={handleReservation}/>
+                        </div>
+                        
+                    </div>) :
+                     (<a href="#" className="button" onClick={openModal}>
                         Reserve a Table
-                    </a>
+                    </a>)}
 
                 </div>
 
@@ -34,7 +57,11 @@ function Hero() {
                 </div>
 
             </div>
+
+           
         </section>
+
+        
   );
 }
 

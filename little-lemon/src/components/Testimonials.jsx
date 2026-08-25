@@ -1,16 +1,16 @@
 
 function Testimonials() {
     return (
-<section class="testimonials">
+<section className="testimonials">
 
-            <div class="section-container">
+            <div className="section-container">
 
                 <h2>What Our Guests Say</h2>
 
-                <div class="testimonial-grid">
+                <div className="testimonial-grid">
 
-                    <article class="testimonial">
-                        <div class="stars">★★★★★</div>
+                    <article className="testimonial">
+                        <div className="stars">★★★★★</div>
 
                         <p>
                             "Absolutely loved the food.
@@ -21,8 +21,8 @@ function Testimonials() {
                     </article>
 
 
-                    <article class="testimonial">
-                        <div class="stars">★★★★★</div>
+                    <article className="testimonial">
+                        <div className="stars">★★★★★</div>
 
                         <p>
                             "The atmosphere was amazing
@@ -33,8 +33,8 @@ function Testimonials() {
                     </article>
 
 
-                    <article class="testimonial">
-                        <div class="stars">★★★★★</div>
+                    <article className="testimonial">
+                        <div className="stars">★★★★★</div>
 
                         <p>
                             "Fresh, authentic and incredibly
@@ -45,8 +45,8 @@ function Testimonials() {
                     </article>
 
 
-                    <article class="testimonial">
-                        <div class="stars">★★★★★</div>
+                    <article className="testimonial">
+                        <div className="stars">★★★★★</div>
 
                         <p>
                             "One of my favorite restaurants

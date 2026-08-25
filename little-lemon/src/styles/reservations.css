@@ -1,0 +1,257 @@
+.reservation-page {
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+.reservation-container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.reservation-hero {
+  background: #495e57;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.reservation-hero h1 {
+  color: #f4ce14;
+  font-family: Georgia, serif;
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.reservation-hero p {
+  max-width: 550px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+
+/* =========================
+   RESERVATION SECTION
+========================= */
+
+.reservation-section {
+  padding: 70px 0;
+}
+
+.reservation-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 70px;
+  align-items: start;
+}
+
+
+/* =========================
+   INFORMATION
+========================= */
+
+.section-label {
+  color: #ee9972;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.reservation-info h2 {
+  font-family: Georgia, serif;
+  font-size: 34px;
+  margin: 10px 0 20px;
+}
+
+.reservation-info > p {
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 35px;
+}
+
+.restaurant-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.restaurant-details h3 {
+  margin-bottom: 8px;
+}
+
+.restaurant-details p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.restaurant-details strong {
+  font-size: 14px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.reservation-form-container {
+  background: #f7f7f7;
+  padding: 35px;
+  border-radius: 10px;
+}
+
+.reservation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.form-group label {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px;
+
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+  background: white;
+
+  font: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: 2px solid #f4ce14;
+  border-color: #495e57;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.reservation-button {
+  background: #f4ce14;
+  color: #333;
+
+  border: none;
+  border-radius: 6px;
+
+  padding: 14px 20px;
+
+  font-size: 15px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  margin-top: 5px;
+}
+
+.reservation-button:hover {
+  background: #dcb900;
+}
+
+
+/* =========================
+   SUCCESS
+========================= */
+
+.reservation-success {
+  text-align: center;
+  padding: 30px 10px;
+}
+
+.success-icon {
+  width: 60px;
+  height: 60px;
+
+  margin: 0 auto 20px;
+
+  border-radius: 50%;
+
+  background: #495e57;
+  color: #f4ce14;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 28px;
+}
+
+.reservation-success h2 {
+  margin-bottom: 15px;
+}
+
+.reservation-success p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.reservation-success button {
+  background: #f4ce14;
+
+  border: none;
+  border-radius: 5px;
+
+  padding: 12px 18px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+  .reservation-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .reservation-hero h1 {
+    font-size: 38px;
+  }
+
+}
+
+
+@media (max-width: 500px) {
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .reservation-form-container {
+    padding: 25px 20px;
+  }
+
+}

@@ -1,6 +1,10 @@
-nav {
+.App-header {
     width: 100%;
     background-color: #f9f9f9;
+}
+
+
+nav {
     display: flex;
     justify-content: space-between;
     padding: 1rem;
@@ -20,9 +24,12 @@ nav .left {
 }
 
 .logo {
-    background-color: #495e57;
-    border-radius: 50%;
     padding: 6px 10px;
+}
+
+.logo-circle {
+    border-radius: 50%;
+    background-color: #495e57;
 }
 
 nav .right {
@@ -35,4 +42,9 @@ nav .right ul {
     flex-direction: row;
     justify-content: flex-end;
     gap: 10%;
+}
+
+.active-link {
+  color: #f4ce14;
+  font-weight: bold;
 }

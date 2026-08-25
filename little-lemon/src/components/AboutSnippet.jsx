@@ -1,10 +1,10 @@
-function About() {
+function AboutSnippet() {
     return(
-         <section class="about">
+         <section className="about">
 
-            <div class="section-container about-container">
+            <div className="section-container about-container">
 
-                <div class="about-content">
+                <div className="about-content">
 
                     <h2>About</h2>
 
@@ -24,7 +24,7 @@ function About() {
                 </div>
 
 
-                <div class="about-images">
+                <div className="about-images">
 
                     <img
                         src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=600&q=80"
@@ -45,4 +45,4 @@ function About() {
     )
 }
 
-export default About;
+export default AboutSnippet;

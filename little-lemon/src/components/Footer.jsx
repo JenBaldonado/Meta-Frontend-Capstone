@@ -1,13 +1,13 @@
 function Footer() {
     return (
-    <footer class="footer">
+    <footer className="footer">
 
-        <div class="footer-container">
+        <div className="footer-container">
 
-            <div class="footer-brand">
+            <div className="footer-brand">
 
-                <div class="footer-logo">
-                    <div class="logo-circle">LL</div>
+                <div className="footer-logo">
+                    <div className="logo-circle">LL</div>
                     <span>Little Lemon</span>
                 </div>
 
@@ -18,7 +18,7 @@ function Footer() {
             </div>
 
 
-            <div class="footer-column">
+            <div className="footer-column">
 
                 <h3>Discover More</h3>
 
@@ -31,7 +31,7 @@ function Footer() {
             </div>
 
 
-            <div class="footer-column">
+            <div className="footer-column">
 
                 <h3>Contact</h3>
 
@@ -43,7 +43,7 @@ function Footer() {
             </div>
 
 
-            <div class="footer-column">
+            <div className="footer-column">
 
                 <h3>Get Social</h3>
 

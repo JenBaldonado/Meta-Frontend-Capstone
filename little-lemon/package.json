@@ -9,16 +9,16 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
+    "react-router": "^7.18.2",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "preview": "vite preview",
-  "type": "module"
-},
-
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "type": "module"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",

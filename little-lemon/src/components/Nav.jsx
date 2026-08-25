@@ -1,21 +1,30 @@
 import "../styles/nav.css";
+import { NavLink } from "react-router";
 
 function Nav() {
   return (
-    <div class="header-container">
-      <a href="#" class="logo">
-        <div class="logo-circle">LL</div>
-        <span>Little Lemon</span>
-      </a>
+    <header className="App-header">
+      <div className="header-container">
+        <NavLink to="/" className="logo">
+          <div className="logo-circle">LL</div>
+          <span>Little Lemon</span>
+        </NavLink>
 
-      <nav class="navigation">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Menu</a>
-        <a href="#">Reservations</a>
-        <a href="#">Login</a>
-      </nav>
-    </div>
+        <nav className="navigation">
+          <NavLink
+            className={({ isActive }) =>
+              (isActive ? "active-link" : "")} to="/">Home</NavLink>
+          <NavLink  className={({ isActive }) =>
+              (isActive ? "active-link" : "")} to="/about">About</NavLink>
+          <NavLink className={({ isActive }) =>
+              (isActive ? "active-link" : "")} to="/menu">Menu</NavLink>
+          <NavLink className={({ isActive }) =>
+              (isActive ? "active-link" : "")} to="/reservations">Reservations</NavLink>
+          <NavLink className={({ isActive }) =>
+              (isActive ? "active-link" : "")} to="/login">Login</NavLink>
+        </nav>
+      </div>
+    </header>
   );
 }
 
