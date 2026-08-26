@@ -74,28 +74,57 @@ function Form({onSubmit}) {
         <div className="form-row">
             <div className="form-group">
               <label htmlFor="res-date">Choose date</label>
-              <input type="date" id="res-date" />
+              <input
+                type="date"
+                id="res-date"
+                name="date"
+                value={formData.date}
+                onChange={handleChange}
+                required
+              />
             </div>
              <div className="form-group">
                 <label htmlFor="res-time">Choose time</label>
-                <select id="res-time ">
-                  <option>17:00</option>
-                  <option>18:00</option>
-                  <option>19:00</option>
-                  <option>20:00</option>
-                  <option>21:00</option>
-                  <option>22:00</option>
+                <select
+                  id="res-time"
+                  name="time"
+                  value={formData.time}
+                  onChange={handleChange}
+                  required
+                >
+                  <option value="">Choose a time</option>
+                  <option value="17:00">17:00</option>
+                  <option value="18:00">18:00</option>
+                  <option value="19:00">19:00</option>
+                  <option value="20:00">20:00</option>
+                  <option value="21:00">21:00</option>
+                  <option value="22:00">22:00</option>
                 </select>
              </div>
         </div>
         <div className="form-row">
             <div className="form-group">
               <label htmlFor="guests">Number of guests</label>
-              <input type="number" placeholder="1" min="1" max="10" id="guests" />
+              <input
+                type="number"
+                placeholder="1"
+                min="1"
+                max="10"
+                id="guests"
+                name="guests"
+                value={formData.guests}
+                onChange={handleChange}
+                required
+              />
             </div>
             <div className="form-group">
               <label htmlFor="occasion">Occasion</label>
-              <select id="occasion" name="occasion">
+              <select
+                id="occasion"
+                name="occasion"
+                value={formData.occasion}
+                onChange={handleChange}
+              >
                 <option value="">Select occasion</option>
                 <option value="Birthday">Birthday</option>
                 <option value="Anniversary">Anniversary</option>

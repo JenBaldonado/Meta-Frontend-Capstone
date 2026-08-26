@@ -1,13 +1,17 @@
 import "../styles/hero.css";
 import { useEffect, useState } from 'react'
+import { Link } from "react-router";
 import Form from "./Form"
 
 function Hero() {
-    const [reservation, setReservation] = useState(null);
+    const [reservation, setReservation] = useState(() => {
+        const savedReservation = localStorage.getItem("reservation");
+        return savedReservation ? JSON.parse(savedReservation) : null;
+    });
     
         function handleReservation(formData) {
             console.log("Reservation:", formData);
-            // You could send formData to an API here.
+            localStorage.setItem("reservation", JSON.stringify(formData));
             setReservation(formData);
         }
 
@@ -60,7 +64,21 @@ function Hero() {
                         onClick={closeModal}
                     >
                         <div className="innerModal">
-                        <Form onSubmit={handleReservation}/>
+                        {reservation ? (
+                            <div className="reservation-success">
+                                <h2>Reservation submitted!</h2>
+                                <p>Your reservation details are ready to view.</p>
+                                <Link
+                                    to="/reservations"
+                                    className="button"
+                                    onClick={() => setModal(false)}
+                                >
+                                    View Reservation
+                                </Link>
+                            </div>
+                        ) : (
+                            <Form onSubmit={handleReservation}/>
+                        )}
                         </div>
                         
                     </div>) :

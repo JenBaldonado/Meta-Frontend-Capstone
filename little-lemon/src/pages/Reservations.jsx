@@ -3,11 +3,14 @@ import "../styles/reservations.css";
 import Form from "../components/Form";
 
 function Reservations() {
-  const [reservation, setReservation] = useState(null);
+  const [reservation, setReservation] = useState(() => {
+    const savedReservation = localStorage.getItem("reservation");
+    return savedReservation ? JSON.parse(savedReservation) : null;
+  });
 
     function handleReservation(formData) {
         console.log("Reservation:", formData);
-        // You could send formData to an API here.
+        localStorage.setItem("reservation", JSON.stringify(formData));
         setReservation(formData);
     }
 
@@ -70,7 +73,10 @@ function Reservations() {
                   {reservation.time}.
                 </p>
 
-                <button onClick={() => setSubmitted(false)}>
+                <button onClick={() => {
+                  localStorage.removeItem("reservation");
+                  setReservation(null);
+                }}>
                   Make Another Reservation
                 </button>
               </div> ) : (<Form onSubmit={handleReservation} />)}
