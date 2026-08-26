@@ -1,5 +1,5 @@
 import "../styles/hero.css";
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Form from "./Form"
 
 function Hero() {
@@ -16,6 +16,23 @@ function Hero() {
     function openModal() {
         setModal(true)
     }
+
+    function closeModal(event) {
+        if (event.target === event.currentTarget) {
+            setModal(false)
+        }
+    }
+
+    useEffect(() => {
+        if (!modal) return;
+
+        const previousOverflow = document.body.style.overflow;
+        document.body.style.overflow = "hidden";
+
+        return () => {
+            document.body.style.overflow = previousOverflow;
+        };
+    }, [modal]);
 
   return (
     <section className="hero">
@@ -34,16 +51,22 @@ function Hero() {
                         in the heart of Chicago.
                     </p>
 
-                    {modal ? (<div id="modal" className="modal">
+                    {modal ? (<div
+                        id="modal"
+                        className="modal"
+                        role="dialog"
+                        aria-modal="true"
+                        aria-label="Reserve a table"
+                        onClick={closeModal}
+                    >
                         <div className="innerModal">
-                            <div className="overlay"></div>
                         <Form onSubmit={handleReservation}/>
                         </div>
                         
                     </div>) :
-                     (<a href="#" className="button" onClick={openModal}>
+                     (<button type="button" className="button" onClick={openModal}>
                         Reserve a Table
-                    </a>)}
+                    </button>)}
 
                 </div>
 
