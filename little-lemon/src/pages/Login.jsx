@@ -7,7 +7,7 @@ function Login() {
 
     function handleSubmit(event) {
         event.preventDefault();
-        setMessage("Thanks! Login functionality will be available soon.");
+        setMessage("Thanks for your interest! Our login experience is coming soon, and we’ll be ready to welcome you back with a faster booking flow.");
     }
 
     return(

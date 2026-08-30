@@ -176,12 +176,14 @@
 }
 
 .login-message {
-    padding: 12px;
-    border-radius: 6px;
-    background: #eef3f1;
-    color: #354a43;
+    padding: 12px 14px;
+    border-radius: 8px;
+    background: #eef4ef;
+    border: 1px solid rgba(73, 94, 87, 0.15);
+    color: #2d463f;
     font-size: 13px;
-    line-height: 1.5;
+    line-height: 1.6;
+    box-shadow: 0 8px 20px rgba(73, 94, 87, 0.08);
 }
 
 .login-signup {

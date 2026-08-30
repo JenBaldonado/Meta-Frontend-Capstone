@@ -1,22 +1,38 @@
-import { useState } from "react";
+import { useReducer } from "react";
 import "../styles/reservations.css";
-import Form from "../components/Form";
+import Form from "../components/BookingForm";
 
-function Reservations() {
-  const [reservation, setReservation] = useState(() => {
-    const savedReservation = localStorage.getItem("reservation");
-    return savedReservation ? JSON.parse(savedReservation) : null;
-  });
+export function initializeTimes() {
+  const today = new Date().toISOString().split("T")[0];
 
-    function handleReservation(formData) {
-        console.log("Reservation:", formData);
-        localStorage.setItem("reservation", JSON.stringify(formData));
-        setReservation(formData);
-    }
+  if (typeof fetchAPI === "function") {
+    return fetchAPI(today);
+  }
+
+  return ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
+}
+
+export function updateTimes(state, action) {
+  switch (action.type) {
+    case "DATE_CHANGED":
+      if (typeof fetchAPI === "function") {
+        return fetchAPI(action.date);
+      }
+      return state;
+    default:
+      return state;
+  }
+}
+
+function Reservations({ submitForm }) {
+  const [availableTimes, dispatch] = useReducer(
+    updateTimes,
+    undefined,
+    initializeTimes
+  );
 
   return (
     <main className="reservation-page">
-      {/* HERO */}
       <section className="reservation-hero">
         <div className="reservation-container">
           <h1>Reserve a Table</h1>
@@ -28,7 +44,6 @@ function Reservations() {
         </div>
       </section>
 
-      {/* RESERVATION FORM */}
       <section className="reservation-section">
         <div className="reservation-container reservation-layout">
           <div className="reservation-info">
@@ -62,24 +77,7 @@ function Reservations() {
           </div>
 
           <div className="reservation-form-container">
-             {reservation ? (<div className="reservation-success">
-                <div className="success-icon">✓</div>
-
-                <h2>Reservation received!</h2>
-
-                <p>
-                  Thank you, {reservation.name}. Your table for {reservation.guests}{" "}
-                  guests has been requested for {reservation.date} at{" "}
-                  {reservation.time}.
-                </p>
-
-                <button onClick={() => {
-                  localStorage.removeItem("reservation");
-                  setReservation(null);
-                }}>
-                  Make Another Reservation
-                </button>
-              </div> ) : (<Form onSubmit={handleReservation} />)}
+            <Form availableTimes={availableTimes} dispatch={dispatch} submitForm={submitForm} />
           </div>
         </div>
       </section>
