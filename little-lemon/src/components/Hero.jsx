@@ -6,7 +6,7 @@ function Hero() {
     <section className="hero">
       <div className="hero-container">
         <div className="hero-content">
-          <h1>Little Lemon</h1>
+          <h1>Saffron &amp; Ember</h1>
 
           <h2>Chicago</h2>
 

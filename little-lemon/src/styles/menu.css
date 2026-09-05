@@ -9,7 +9,7 @@
 }
 
 .menu-hero {
-  background: #495e57;
+  background: var(--brown);
   color: white;
   padding: 70px 0;
   text-align: center;
@@ -17,7 +17,7 @@
 
 .menu-hero h1 {
   font-size: 48px;
-  color: #f4ce14;
+  color: var(--gold);
   margin-bottom: 15px;
 }
 
@@ -43,9 +43,10 @@
 }
 
 .menu-card {
-  background: #f5f5f5;
+  background: #fff;
   border-radius: 10px;
   overflow: hidden;
+  box-shadow: 0 10px 28px rgba(89, 61, 48, 0.16);
 }
 
 .menu-card img {
@@ -65,18 +66,18 @@
 }
 
 .menu-card-header span {
-  color: #ee9972;
+  color: var(--coral);
   font-weight: bold;
 }
 
 .menu-card-content p {
   margin: 15px 0;
-  color: #555;
+  color: var(--muted);
   line-height: 1.5;
 }
 
 .menu-card button {
-  background: #f4ce14;
+  background: var(--gold);
   border: none;
   padding: 10px 16px;
   border-radius: 5px;
@@ -93,4 +94,81 @@
   .menu-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* Modal Styles */
+
+.modal-overlay {
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  background: rgb(21 8 1 / 70%);
+}
+
+.dish-modal {
+  position: relative;
+  width: min(100%, 42rem);
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 1rem;
+  background: #fdfbfa;
+  box-shadow: 0 1.5rem 4rem rgb(21 8 1 / 30%);
+}
+
+.dish-modal > img {
+  width: 100%;
+  height: 16rem;
+  object-fit: cover;
+}
+
+.dish-modal__content {
+  padding: 1.5rem;
+  color: #301f17;
+}
+
+.dish-modal__heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.dish-modal__heading span {
+  color: #c54730;
+  font-weight: 700;
+}
+
+.dish-modal__close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 0;
+  border-radius: 50%;
+  background: #fdfbfa;
+  color: #301f17;
+  font-size: 1.75rem;
+  cursor: pointer;
+}
+
+.dish-modal__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-block: 1rem;
+}
+
+.dish-modal__tags span {
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  background: #f9ddd0;
+  color: #8f3120;
+  font-size: 0.875rem;
+  font-weight: 600;
 }

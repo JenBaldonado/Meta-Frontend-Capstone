@@ -1,5 +1,5 @@
 .Hero {
-  background-color: #495e57;
+  background-color: var(--brown);
   width: 100%;
 }
 .hero__inner {
@@ -35,7 +35,7 @@
 .innerModal {
   position: relative;
   width: 100%;
-  background-color: #495e57;
+  background-color: var(--brown);
   max-width: 720px;
   padding: 1rem;
   border-radius: 3%;

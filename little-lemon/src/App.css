@@ -12,8 +12,8 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    color: #333;
-    background: #fff;
+    color: var(--ink);
+    background: var(--paper);
 }
 
 img {
@@ -50,8 +50,8 @@ main {
 ========================= */
 
 .header {
-    background: #fff;
-    border-bottom: 1px solid #ddd;
+    background: var(--paper);
+    border-bottom: 1px solid var(--line);
 }
 
 .header-container {
@@ -77,8 +77,8 @@ main {
 
     border-radius: 50%;
 
-    background: #495f58;
-    color: #f4ce14;
+    background: var(--espresso);
+    color: var(--gold);
 
     display: flex;
     align-items: center;
@@ -96,7 +96,7 @@ main {
 }
 
 .navigation a:hover {
-    color: #f4ce14;
+    color: var(--coral);
 }
 
 
@@ -105,7 +105,7 @@ main {
 ========================= */
 
 .hero {
-    background: #495f58;
+    background: var(--brown);
     color: white;
 
     padding: 55px 0;
@@ -124,7 +124,7 @@ main {
 .hero-content h1 {
     font-family: Georgia, serif;
     font-size: 42px;
-    color: #f4ce14;
+    color: var(--gold);
 
     margin-bottom: 2px;
 }
@@ -148,8 +148,8 @@ main {
 .button {
     display: inline-block;
 
-    background: #f4ce14;
-    color: #333;
+    background: var(--gold);
+    color: var(--ink);
 
     padding: 12px 20px;
 
@@ -160,7 +160,7 @@ main {
 }
 
 .button:hover {
-    background: #dcb900;
+    background: var(--orange-bright);
 }
 
 .hero-images {
@@ -214,7 +214,7 @@ main {
 }
 
 .menu-button {
-    border: 1px solid #495f58;
+    border: 1px solid var(--orange);
 
     padding: 8px 14px;
 
@@ -224,7 +224,7 @@ main {
 }
 
 .menu-button:hover {
-    background: #495f58;
+    background: var(--orange);
     color: white;
 }
 
@@ -237,13 +237,13 @@ main {
 }
 
 .food-card {
-    background: #f7f7f7;
+    background: #fff;
 
     border-radius: 8px;
 
     overflow: hidden;
 
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 24px rgba(89, 61, 48, 0.12);
 }
 
 .food-card > img {
@@ -270,13 +270,13 @@ main {
 }
 
 .card-title span {
-    color: #ee9972;
+    color: var(--coral);
     font-weight: bold;
     font-size: 13px;
 }
 
 .card-content p {
-    color: #666;
+    color: var(--muted);
 
     font-size: 12px;
 
@@ -291,7 +291,7 @@ main {
 }
 
 .card-content a:hover {
-    color: #ee9972;
+    color: var(--coral);
 }
 
 
@@ -300,7 +300,7 @@ main {
 ========================= */
 
 .testimonials {
-    background: #eeeeee;
+    background: #f8eadc;
 
     padding: 45px 0;
 }
@@ -324,7 +324,7 @@ main {
 }
 
 .testimonial {
-    background: white;
+    background: #fff;
 
     padding: 18px;
 
@@ -332,7 +332,7 @@ main {
 }
 
 .stars {
-    color: #f4ce14;
+    color: var(--gold);
 
     font-size: 14px;
 
@@ -344,7 +344,7 @@ main {
 
     line-height: 1.6;
 
-    color: #555;
+    color: var(--muted);
 
     margin-bottom: 12px;
 }
@@ -385,7 +385,7 @@ main {
 
     line-height: 1.7;
 
-    color: #555;
+    color: var(--muted);
 
     margin-bottom: 15px;
 }
@@ -412,7 +412,7 @@ main {
 ========================= */
 
 .footer {
-    background: #333;
+    background: var(--espresso);
 
     color: white;
 
@@ -442,7 +442,7 @@ main {
 }
 
 .footer-brand p {
-    color: #aaa;
+    color: #d9bda7;
 
     font-size: 11px;
 
@@ -458,7 +458,7 @@ main {
 }
 
 .footer-column h3 {
-    color: #f4ce14;
+    color: var(--gold);
 
     font-size: 12px;
 
@@ -467,7 +467,7 @@ main {
 
 .footer-column a,
 .footer-column p {
-    color: #aaa;
+    color: #d9bda7;
 
     font-size: 10px;
 }

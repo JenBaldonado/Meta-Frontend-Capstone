@@ -1,8 +1,23 @@
+:root {
+  --ink: #150801;
+  --espresso: #3f2104;
+  --brown: #593d30;
+  --orange: #c87620;
+  --orange-bright: #fa9031;
+  --gold: #f8d830;
+  --gold-dark: #ccb220;
+  --coral: #c54730;
+  --peach: #fccea9;
+  --paper: #fffaf5;
+  --muted: #765e50;
+  --line: #ead7c4;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: var(--ink);
+  background: var(--paper);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

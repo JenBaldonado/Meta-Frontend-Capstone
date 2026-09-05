@@ -7,8 +7,8 @@ function Footer() {
             <div className="footer-brand">
 
                 <div className="footer-logo">
-                    <div className="logo-circle">LL</div>
-                    <span>Little Lemon</span>
+                    <div className="logo-circle">SE</div>
+                    <span>Saffron &amp; Ember</span>
                 </div>
 
                 <p>
@@ -35,10 +35,10 @@ function Footer() {
 
                 <h3>Contact</h3>
 
-                <p>123 Chicago Avenue</p>
+                <p>123 Saffron Avenue</p>
                 <p>Chicago, IL</p>
                 <p>+1 555 123 4567</p>
-                <p>info@littlelemon.com</p>
+                <p>hello@saffronandember.com</p>
 
             </div>
 

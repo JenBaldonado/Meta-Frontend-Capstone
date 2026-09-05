@@ -1,6 +1,6 @@
 .App-header {
     width: 100%;
-    background-color: #f9f9f9;
+    background-color: var(--paper);
 }
 
 
@@ -29,7 +29,7 @@ nav .left {
 
 .logo-circle {
     border-radius: 50%;
-    background-color: #495e57;
+    background-color: var(--espresso);
 }
 
 nav .right {
@@ -45,6 +45,6 @@ nav .right ul {
 }
 
 .active-link {
-  color: #f4ce14;
+    color: var(--coral);
   font-weight: bold;
 }

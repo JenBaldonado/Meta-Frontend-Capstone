@@ -9,7 +9,7 @@ function AboutSnippet() {
                     <h2>About</h2>
 
                     <p>
-                        Little Lemon is a family-owned restaurant.
+                        Saffron &amp; Ember is a family-owned restaurant.
                         We love sharing delicious Mediterranean food
                         with our guests.
                     </p>
@@ -28,7 +28,7 @@ function AboutSnippet() {
 
                     <img
                         src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=600&q=80"
-                        alt="Little Lemon restaurant interior"
+                        alt="Saffron & Ember restaurant interior"
                     />
 
                     <img

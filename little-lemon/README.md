@@ -1,10 +1,10 @@
-# Little Lemon
+# Saffron & Ember
 
 A modern restaurant landing page and reservation app built with React and Vite. The project combines a polished brand experience with a functional table-booking flow for a Mediterranean-inspired restaurant.
 
 ## Overview
 
-Little Lemon is a front-end application that showcases the restaurant brand and lets visitors reserve a table. It includes a responsive homepage, featured menu items, testimonials, and a reservation confirmation journey.
+Saffron & Ember is a front-end application that showcases the restaurant brand and lets visitors reserve a table. It includes a responsive homepage, featured menu items, testimonials, and a reservation confirmation journey.
 
 ### Included features
 

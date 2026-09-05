@@ -38,7 +38,7 @@ function Reservations({ submitForm }) {
           <h1>Reserve a Table</h1>
 
           <p>
-            Join us at Little Lemon and enjoy fresh Mediterranean dishes in the
+            Join us at Saffron &amp; Ember and enjoy fresh Mediterranean dishes in the
             heart of Chicago.
           </p>
         </div>
@@ -70,7 +70,7 @@ function Reservations({ submitForm }) {
 
               <div>
                 <h3>Location</h3>
-                <p>123 Lemon Street</p>
+                <p>123 Saffron Avenue</p>
                 <p>Chicago, IL</p>
               </div>
             </div>

@@ -6,8 +6,8 @@ function Nav() {
     <header className="App-header">
       <div className="header-container">
         <NavLink to="/" className="logo">
-          <div className="logo-circle">LL</div>
-          <span>Little Lemon</span>
+          <div className="logo-circle">SE</div>
+          <span>Saffron &amp; Ember</span>
         </NavLink>
 
         <nav className="navigation">

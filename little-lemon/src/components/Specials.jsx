@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 function Specials(){
     return (
          <section className="specials">
@@ -7,9 +9,9 @@ function Specials(){
                 <div className="section-heading">
                     <h2>This Week's Specials</h2>
 
-                    <a href="#" className="menu-button">
+                    <Link to="/Menu" className="menu-button">
                         Online Menu
-                    </a>
+                    </Link>
                 </div>
 
 

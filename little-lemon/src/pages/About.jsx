@@ -12,12 +12,12 @@ function About() {
           <div className="about-hero-content">
             <span className="section-label">Our Story</span>
 
-            <h1>Little Lemon</h1>
+            <h1>Saffron &amp; Ember</h1>
 
             <h2>Chicago</h2>
 
             <p>
-              Little Lemon is a family-owned Mediterranean restaurant
+              Saffron &amp; Ember is a family-owned Mediterranean restaurant
               inspired by traditional recipes, fresh ingredients, and
               the joy of sharing good food with good company.
             </p>
@@ -26,7 +26,7 @@ function About() {
           <div className="about-hero-images">
             <img
               src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=900&q=80"
-              alt="Little Lemon restaurant interior"
+              alt="Saffron & Ember restaurant interior"
             />
 
             <img
@@ -48,7 +48,7 @@ function About() {
             <h2>A little restaurant with a big love for food</h2>
 
             <p>
-              Little Lemon began with a simple idea: create a welcoming
+              Saffron &amp; Ember began with a simple idea: create a welcoming
               neighborhood restaurant where people could enjoy authentic
               Mediterranean flavors in a relaxed and modern setting.
             </p>
@@ -69,7 +69,7 @@ function About() {
           <div className="story-image">
             <img
               src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=900&q=80"
-              alt="Little Lemon dining room"
+              alt="Saffron & Ember dining room"
             />
           </div>
 
@@ -134,7 +134,7 @@ function About() {
           <div className="team-image">
             <img
               src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=900&q=80"
-              alt="Little Lemon chef preparing food"
+              alt="Saffron & Ember chef preparing food"
             />
           </div>
 

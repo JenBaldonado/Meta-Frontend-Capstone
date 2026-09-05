@@ -21,7 +21,7 @@ function Login() {
                         dishes, and enjoy a faster booking experience.
                     </p>
                     <div className="login-highlight" aria-hidden="true">
-                        <span>LL</span>
+                        <span>SE</span>
                         <p>Fresh Mediterranean food, made with love.</p>
                     </div>
                 </div>
@@ -75,7 +75,7 @@ function Login() {
                     </form>
 
                     <p className="login-signup">
-                        New to Little Lemon? <Link to="/reservations">Book as a guest</Link>
+                        New to Saffron &amp; Ember? <Link to="/reservations">Book as a guest</Link>
                     </p>
                 </div>
             </div>
